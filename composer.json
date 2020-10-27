@@ -1,7 +1,7 @@
 {
     "name": "horde/history",
     "description": "History tracking library",
-    "type": "library",
+    "type": "horde-library",
     "homepage": "https://www.horde.org/libraries/Horde_History",
     "license": "LGPL-2.1",
     "authors": [
@@ -12,26 +12,23 @@
         }
     ],
     "version": "2.3.7",
-    "time": "2017-11-11",
+    "time": "2020-10-27",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Db": "^2",
-        "pear-pear.horde.org/Horde_Exception": "^2"
+        "horde/db": "dev-master",
+        "horde/exception": "dev-master"
     },
     "suggest": {
-        "pear-pear.horde.org/Horde_HashTable": "^1",
-        "pear-pear.horde.org/Horde_Mongo": "^1",
-        "pear-pear.horde.org/Horde_Test": "^2.1"
-    },
-    "replace": {
-        "pear-pear.horde.org/Horde_History": "2.*",
-        "pear-horde/Horde_History": "2.*"
+        "horde/hashtable": "^1",
+        "horde/mongo": "^1",
+        "horde/test": "^2.1"
     },
     "autoload": {
         "psr-0": {
